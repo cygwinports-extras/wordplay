@@ -1,0 +1,8 @@
+category: Games
+requires: cygwin gdk-pixbuf gtk+ xorg-x11-base
+sdesc: "GTK+ word game"
+ldesc: "Wordplay is a game for Unix/GTK+. It is primarily aimed at
+Scrabble(TM) players looking to improve their anagramming and hooking
+skills, but can also be played for fun. The dictionary used is the full
+TWL98 word list (used for tournaments and club play in the U.S. and
+Canada)."

@@ -1,0 +1,106 @@
+wordplay
+------------------------------------------
+Wordplay is a game for Unix/GTK+. It is primarily aimed at Scrabble(TM)
+players looking to improve their anagramming and hooking skills, but can
+also be played for fun. The dictionary used is the full TWL98 word list
+(used for tournaments and club play in the U.S. and Canada).
+
+Runtime requirements:
+  cygwin-1.5.18-1
+  gdk-pixbuf-0.22.0-3
+  glib-1.2.10-3
+  gtk+-1.2.10-2
+  libiconv2-1.9.2-1
+  libintl3-0.14.1-1
+  xorg-x11-bin-dlls-6.8.2.0-1
+
+Build requirements:
+  cygwin-1.5.18-1
+  binutils-20050610-1
+  gcc-core-3.4.4-1
+  make-3.80-1
+
+  gdk-pixbuf-0.22.0-3
+  gettext-0.14.1-1
+  glib-devel-1.2.10-3
+  gtk+-devel-1.2.10-2
+  libiconv-1.9.2-1
+  xorg-x11-devel-6.8.2.0-1
+
+Canonical website:
+  http://ironphoenix.org/tril/wordplay/
+
+-------------------------------------------
+
+Build instructions:
+  unpack wordplay-0.1-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./wordplay-0.1-1.sh all
+
+This will create:
+  /usr/src/wordplay-0.1-1-src.tar.bz2
+  /usr/src/wordplay-0.1-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/wordplay.exe
+  /usr/share/doc/Cygwin/wordplay-0.1.README
+  /usr/share/doc/wordplay-0.1/AUTHORS
+  /usr/share/doc/wordplay-0.1/ChangeLog
+  /usr/share/doc/wordplay-0.1/COPYING
+  /usr/share/doc/wordplay-0.1/INSTALL
+  /usr/share/doc/wordplay-0.1/NEWS
+  /usr/share/doc/wordplay-0.1/README
+  /usr/share/wordplay/bingos.7
+  /usr/share/wordplay/bingos.8
+  /usr/share/wordplay/dict.3
+  /usr/share/wordplay/dict.4
+  /usr/share/wordplay/dict.7
+  /usr/share/wordplay/dict.8
+  /usr/share/wordplay/help.txt
+  /usr/share/wordplay/hooks.2
+  /usr/share/wordplay/hooks.3
+  /usr/share/wordplay/tilesets/plastic/a.png
+  /usr/share/wordplay/tilesets/plastic/b.png
+  /usr/share/wordplay/tilesets/plastic/BG
+  /usr/share/wordplay/tilesets/plastic/c.png
+  /usr/share/wordplay/tilesets/plastic/d.png
+  /usr/share/wordplay/tilesets/plastic/e.png
+  /usr/share/wordplay/tilesets/plastic/f.png
+  /usr/share/wordplay/tilesets/plastic/g.png
+  /usr/share/wordplay/tilesets/plastic/h.png
+  /usr/share/wordplay/tilesets/plastic/i.png
+  /usr/share/wordplay/tilesets/plastic/j.png
+  /usr/share/wordplay/tilesets/plastic/k.png
+  /usr/share/wordplay/tilesets/plastic/l.png
+  /usr/share/wordplay/tilesets/plastic/m.png
+  /usr/share/wordplay/tilesets/plastic/n.png
+  /usr/share/wordplay/tilesets/plastic/o.png
+  /usr/share/wordplay/tilesets/plastic/p.png
+  /usr/share/wordplay/tilesets/plastic/q.png
+  /usr/share/wordplay/tilesets/plastic/r.png
+  /usr/share/wordplay/tilesets/plastic/s.png
+  /usr/share/wordplay/tilesets/plastic/t.png
+  /usr/share/wordplay/tilesets/plastic/u.png
+  /usr/share/wordplay/tilesets/plastic/v.png
+  /usr/share/wordplay/tilesets/plastic/w.png
+  /usr/share/wordplay/tilesets/plastic/x.png
+  /usr/share/wordplay/tilesets/plastic/y.png
+  /usr/share/wordplay/tilesets/plastic/z.png
+  /usr/share/wordplay/tilesets/plastic/_.png
+  /usr/share/wordplay/words.6
+
+------------------
+
+Port Notes:
+
+----- version 0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
