@@ -1,0 +1,28 @@
+DESCRIPTION="Scrabble word games"
+HOMEPAGE="http://ironphoenix.org/tril/wordplay/"
+SRC_URI="http://ironphoenix.org/tril/wordplay/${P}.tar.gz
+         http://ironphoenix.org/tril/wordplay/${P}.tar.gz.asc"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake PREFIX=/usr
+}
+
+src_install() {
+	cd ${B}
+	dobin wordplay.exe
+
+	insinto /usr/share/${PN}
+	doins ${S}/data/*
+
+	cp -r ${S}/tilesets ${D}/usr/share/${PN}/
+
+	for res in 16x16 32x32 48x48
+	do
+		insinto /usr/share/icons/hicolor/${res}/apps
+		newins ${S}/wordplay_${res}.png wordplay.png
+	done
+
+	make_desktop_entry wordplay "Wordplay" wordplay "Game;LogicGame;GTK"
+}
