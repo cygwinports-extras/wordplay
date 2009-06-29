@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin gdk-pixbuf glib gtk+
+requires: gdk-pixbuf glib gtk+
 sdesc: "GTK+ Scrabble word game"
 ldesc: "Wordplay is a game for Unix/GTK+. It is primarily aimed at
 Scrabble(TM) players looking to improve their anagramming and hooking
